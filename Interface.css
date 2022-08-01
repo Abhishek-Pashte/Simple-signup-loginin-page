@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(227, 236, 236);
+}
+div.main{
+    padding: 20px;
+    padding-top: 50px;
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+}
+#mainhead{
+    display: flex;
+}
+#l,#s
+{   
+    position: absolute;
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+    height: 40px;
+    width: 195px;
+    background-color: burlywood;
+    border: 1px solid;
+}
+
+#l{
+    left: 50px;
+}
+#s{
+    left: 246px;
+}  
+#signupbox{
+    left: 50px;
+    padding: 20px;
+    position: absolute;
+    top: 125px;
+    border: 3px solid;
+    height: 300px;
+    width: 350px;
+} 
+#loginbox{
+    left: 50px;
+    padding: 20px;
+    position: absolute;
+    top: 125px;
+    border: 3px solid;
+    height: 300px;
+    width: 350px;
+}
+input{
+    width :100%;
+    padding: 5px 10px;
+    margin: 5px ;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+button{
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    border-radius: 5px;
+    bottom: 25px;
+    left: 25%;
+}
+button:hover{
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    border-radius: 5px;
+    bottom: 25px;
+    left: 25%;
+    background-color: aquamarine;
+    transition-duration: 1s;
+}
