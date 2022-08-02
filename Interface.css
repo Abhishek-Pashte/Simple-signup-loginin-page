@@ -4,11 +4,11 @@ body{
 div.main{
     padding: 20px;
     padding-top: 50px;
-    height: 500px;
-    width: 450px;
+    height: 450px;
+    width: 900px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #1a4f9a;
 }
 #mainhead{
     display: flex;
@@ -24,13 +24,13 @@ div.main{
     background-color: burlywood;
     border: 1px solid;
 }
-
 #l{
     left: 50px;
 }
 #s{
     left: 246px;
 }  
+
 #signupbox{
     left: 50px;
     padding: 20px;
@@ -74,4 +74,31 @@ button:hover{
     left: 25%;
     background-color: aquamarine;
     transition-duration: 1s;
+}
+#img
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 200px;
+    background-size: cover;
+    position: absolute;
+    left: 490px;
+    height: 407px;
+    width: 390px;
+    text-shadow: 2px 2px 8px black;
+    background-image: url("Html.jpg");
+}
+#img:hover
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 200px;
+    background-size: cover;
+    position: absolute;
+    left: 490px;
+    height: 407px;
+    width: 390px;
+    text-shadow: 2px 2px 8px black;
+    opacity: 0.5;
+
 }
