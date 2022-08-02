@@ -97,6 +97,7 @@ function login()
     var pass=document.getElementById("login_pass").value;
     if(name.length>0 && pass=="admin" && name=="admin")
     {
+        location.href="in.html";
         alert("Successfully log in");
     }
     else
@@ -104,3 +105,4 @@ function login()
         alert("Incorrect Credentials");
     }
 }
+
