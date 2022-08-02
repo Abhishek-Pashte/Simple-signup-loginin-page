@@ -11,27 +11,29 @@
 <body onload="choose_opt(2)">
     <html>
         <div class="main">
-            <div id="mainhead">
-                <div id="s" onclick="choose_opt(1)">Sign up</div>
-                <div id="l" onclick="choose_opt(2)">Login</div>
+            <div id="info">
+                <div id="mainhead">
+                    <div id="s" onclick="choose_opt(1)" onclick="change()">Sign up</div>
+                    <div id="l" onclick="choose_opt(2)">Login</div>
+                </div>
+                <div id="signupbox">
+                    Username : <input type="text" id="sign_name"></input>
+                    <br><br>
+                    Password : <input type="text" id="sign_pass" onclick="checksignname()"></input>
+                    <br><br>
+                    Re-Enter Password : <input type="text" id="sign_repass" onclick="check_sign_pass(),checksignname()"></input>
+                    <br><br>
+                    <button onclick="signup()" ahref="in.html">Sign up</button>
+                </div>
+                <div id="loginbox">
+                    Username : <input type="text" id="login_name"></input>
+                    <br><br>
+                    Password : <input type="text" id="login_pass" onclick="checkloginname()"></input>
+                    <br><br>
+                    <button onclick="login()">Login</button>
+                </div>
             </div>
-            <div id="signupbox">
-                Username : <input type="text" id="sign_name"></input>
-                <br><br>
-                Password : <input type="text" id="sign_pass" onclick="checksignname()"></input>
-                <br><br>
-                Re-Enter Password : <input type="text" id="sign_repass" onclick="check_sign_pass(),checksignname()"></input>
-                <br><br>
-                <button onclick="signup()" ahref="in.html">Sign up</button>
-            </div>
-
-            <div id="loginbox">
-                Username : <input type="text" id="login_name"></input>
-                <br><br>
-                Password : <input type="text" id="login_pass" onclick="checkloginname()"></input>
-                <br><br>
-                <button onclick="login()" ahref="in.html">Login</button>
-            </div>
+            <div id="img"></div>
         </div>
     </html>
 </body>
