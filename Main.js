@@ -1,36 +1,37 @@
-function choose_opt(opt){
+function choose_opt(opt)
+{
     var x=document.getElementById("signupbox");
     var y=document.getElementById("loginbox");
-    if(opt==1)
+    if(opt==1)  /* signup option is taken */
     {
-        x.style.display="block";
-        y.style.display="none";
-        document.getElementById("s").style.backgroundColor="rgb(215, 140, 59)";
-        document.getElementById("l").style.backgroundColor="burlywood";
+        x.style.display="block";    /* Displaying signup box */
+        y.style.display="none";     /* Hiding loginbox  */
+        document.getElementById("signup_header").style.backgroundColor="rgb(215, 140, 59)";
+        document.getElementById("login_header").style.backgroundColor="burlywood";
     }
-    else
+    else    /* login option is taken */
     {
-        x.style.display="none";
-        y.style.display="block";
-        document.getElementById("l").style.backgroundColor="rgb(215, 140, 59)";
-        document.getElementById("s").style.backgroundColor="burlywood";
+        x.style.display="none";     /* Hiding signupbox */
+        y.style.display="block";    /* Displaying loginbox */
+        document.getElementById("login_header").style.backgroundColor="rgb(215, 140, 59)";
+        document.getElementById("signup_header").style.backgroundColor="burlywood";
     }
 }
-function set_to_default(){
+function set_to_default()   /* setting values to null */
+{
     document.getElementById("sign_pass").value="";
     document.getElementById("sign_repass").value="";
 }
 
-function checksignname()
+function checksignname()    /* checking sign in name */
 {
     var sign_name_len=document.getElementById("sign_name").value.length;
-    var login_name_len=document.getElementById("login_name").value.length
     if(sign_name_len==0)
     {
         alert("Enter Username");
     }
 }
-function checkloginname()
+function checkloginname()   /* checking login in name */
 {
     var login_name_len=document.getElementById("login_name").value.length
     if(login_name_len==0)
@@ -38,7 +39,8 @@ function checkloginname()
         alert("Enter Username");
     }
 }
-function check_sign_pass(){
+function check_sign_pass()
+{
     var sign_pass=document.getElementById("sign_pass").value;
 
     if(sign_pass.length==0)
@@ -56,7 +58,8 @@ function check_sign_pass(){
     return true;
 }
 
-function check_login_pass(){
+function check_login_pass()
+{
     var login_pass=document.getElementById("login_pass").value;
 
     if(login_pass.length==0)
@@ -73,7 +76,8 @@ function check_login_pass(){
     }
     return true;
 }
-function signup(){
+function signup()
+{
     var name=document.getElementById("sign_name").value;
     var pass=document.getElementById("sign_pass").value;
     var repass=document.getElementById("sign_repass").value; 
@@ -105,4 +109,3 @@ function login()
         alert("Incorrect Credentials");
     }
 }
-
