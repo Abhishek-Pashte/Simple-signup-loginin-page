@@ -10,11 +10,10 @@
 </head>
 <body onload="choose_opt(2)">
     <html>
-        <div class="main">
-            <div id="info">
-                <div id="mainhead">
-                    <div id="s" onclick="choose_opt(1)" onclick="change()">Sign up</div>
-                    <div id="l" onclick="choose_opt(2)">Login</div>
+        <div class="login_signup">
+                <div id="header">
+                    <div id="signup_header" onclick="choose_opt(1)" onclick="change()">Sign up</div>
+                    <div id="login_header" onclick="choose_opt(2)">Login</div>
                 </div>
                 <div id="signupbox">
                     Username : <input type="text" id="sign_name"></input>
@@ -32,7 +31,6 @@
                     <br><br>
                     <button onclick="login()">Login</button>
                 </div>
-            </div>
             <div id="img"></div>
         </div>
     </html>
