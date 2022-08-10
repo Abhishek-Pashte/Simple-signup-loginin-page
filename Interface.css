@@ -1,7 +1,9 @@
-body{
+body
+{
     background-color: rgb(227, 236, 236);
 }
-div.main{
+.login_signup
+{
     padding: 20px;
     padding-top: 50px;
     height: 450px;
@@ -10,10 +12,11 @@ div.main{
     background-color: white;
     box-shadow: 5px 10px 8px #1a4f9a;
 }
-#mainhead{
+#header
+{
     display: flex;
 }
-#l,#s
+#login_header,#signup_header
 {   
     position: absolute;
     font-size: 25px;
@@ -24,10 +27,10 @@ div.main{
     background-color: burlywood;
     border: 1px solid;
 }
-#l{
+#login_header{
     left: 50px;
 }
-#s{
+#signup_header{
     left: 246px;
 }  
 
@@ -100,5 +103,4 @@ button:hover{
     width: 390px;
     text-shadow: 2px 2px 8px black;
     opacity: 0.5;
-
 }
